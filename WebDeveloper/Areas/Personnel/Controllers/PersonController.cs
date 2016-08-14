@@ -5,9 +5,12 @@ using System.Web;
 using System.Web.Mvc;
 using WebDeveloper.Model;
 using WebDeveloper.Repository;
+using WebDeveloper.Filters;
 
-namespace WebDeveloper.Controllers
+namespace WebDeveloper.Areas.Personnel.Controllers
 {
+    [ExceptionContol]
+    [AuditControl]
     public class PersonController : Controller
     {
         // GET: Person
